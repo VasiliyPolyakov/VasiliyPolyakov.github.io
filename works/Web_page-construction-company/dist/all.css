@@ -149,7 +149,7 @@ table {
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-position: center left;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 .header-nav {
   background-color: #1e2d3b;
@@ -374,6 +374,80 @@ table {
   width: 230px;
   display: inline-block;
 }
+.clients-content__item-topox {
+  width: 230px;
+  height: 147px;
+  display: inline-block;
+  background-image: url(../img/clients_topox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clients-content__item-topox:hover {
+  background: url(../img/clients_topox_color.png);
+  /* Путь к файлу с заменяемым рисунком  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clients-content__item-excepia {
+  width: 230px;
+  height: 147px;
+  display: inline-block;
+  background-image: url(../img/clients_topox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/clients_excepia.png);
+}
+.clients-content__item-excepia:hover {
+  background: url(../img/clients_excepia_color.png);
+  /* Путь к файлу с заменяемым рисунком  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clients-content__item-vide {
+  width: 230px;
+  height: 147px;
+  display: inline-block;
+  background-image: url(../img/clients_topox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/clients_vide.png);
+}
+.clients-content__item-vide:hover {
+  background: url(../img/clients_vide_color.png);
+  /* Путь к файлу с заменяемым рисунком  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clients-content__item-dehotel {
+  width: 230px;
+  height: 147px;
+  display: inline-block;
+  background-image: url(../img/clients_topox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/clients_dehotel.png);
+}
+.clients-content__item-dehotel:hover {
+  background: url(../img/clients_dehotel_color.png);
+  /* Путь к файлу с заменяемым рисунком  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clients-content__item-umber {
+  width: 230px;
+  height: 147px;
+  display: inline-block;
+  background-image: url(../img/clients_topox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/clients_umber.png);
+}
+.clients-content__item-umber:hover {
+  background: url(../img/clients_umber_color.png);
+  /* Путь к файлу с заменяемым рисунком  */
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /*--------contacts--------*/
 .contacts__header {
   margin: 20px 0 55px 0;
@@ -461,21 +535,57 @@ table {
   margin-left: 10px;
   padding-bottom: 20px;
 }
-/*--------media queris--------*/
 .header-logo__menu {
   display: none;
 }
-.modal-body {
-  background-color: yellow;
+/*--------modal window--------*/
+#modal {
+  z-index: 12000;
+  width: 100vw;
+  height: 100vh;
 }
-@media screen and (max-width: 1105px) {
-  .header-logo__menu {
-    display: block;
-    margin-top: 33px;
+.modal-header {
+  text-align: right;
+}
+.modal-header__btn {
+  background-color: #edcd1f;
+}
+.modal-header {
+  background-color: #edcd1f;
+}
+.modal-body {
+  background-color: #edcd1f;
+}
+.modal-body .modal-body__item {
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-body .modal-body__item a {
+  text-decoration: none;
+  color: #fff;
+}
+/*--------media queris--------*/
+#banners {
+  opacity: 1.0;
+  -moz-opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+#banners:hover {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=40);
+}
+/*--------media queris--------*/
+@media screen and (max-width: 990px) {
+  .header-logo__menu-wrap {
+    margin-top: 30px;
     text-align: right;
   }
-  .header-logo__name {
+  .header-logo__menu-wrap .header-logo__menu {
     display: inline-block;
+  }
+  .header-logo__name {
+    display: block;
     float: left;
   }
   .header-nav {

@@ -10,23 +10,26 @@
 </head>
 
 <body>
-  <header>
+  <header id='main-page'>
     <div class="header container-fluid">
       <div class="row">
-        <div class="header-logo col-xs-12 col-sm-12 col-md-3">
+        <div class="header-logo col-xs-12 col-sm-12 col-md-4">
           <div class="header-logo__name">
             <p><a href="#"><b>Подъем</b><br>стройфирма</a></p>
           </div>
-          <button class="header-logo__menu" type='button' data-toggle='modal' data-target='#modal'><a href=""><img src="./img/menu.png" alt=""></a></button>
+          <div class="header-logo__menu-wrap">
+            <button class="header-logo__menu" type='button' data-toggle='modal' data-target='#modal'><img src="./img/menu.png" alt=""></button>
+          </div>
         </div>
-        <div class="header-nav col-xs-12 col-sm-12 col-md-9">
+
+        <div class="header-nav col-xs-12 col-sm-12 col-md-8">
           <nav>
             <ul>
-              <li class=""><a href="#">Главная</a></li>
-              <li class=""><a href="#">Услуги</a></li>
-              <li class=""><a href="#">О нас</a></li>
-              <li class=""><a href="#">Проекты</a></li>
-              <li class=""><a href="#">Контакты</a></li>
+              <li class=""><a href="#main-page">Главная</a></li>
+              <li class=""><a href="#service">Услуги</a></li>
+              <li class=""><a href="#about">О нас</a></li>
+              <li class=""><a href="#project">Проекты</a></li>
+              <li class=""><a href="#contact">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -39,13 +42,13 @@
         </video>
         <div class="header-footer__text">
           <h1>Лидеры в области <br> качественного <br> строительства</h1>
-          <a href="#"><img src="./img/header_img.png" alt=""></a>
+          <a href="#service"><img src="./img/header_img.png" alt=""></a>
         </div>
       </div>
     </div>
   </header>
   <section>
-    <article class="services">
+    <article id='service' class="services">
       <div class="container">
         <div class="row services-top">
           <h1 class="services-top__name">Услуги</h1>
@@ -87,7 +90,7 @@
         </div>
       </div>
     </article>
-    <article class='about-us'>
+    <article id='about' class='about-us'>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-1"></div>
@@ -127,7 +130,7 @@
         </div>
       </div>
     </article>
-    <article class='projects'>
+    <article id='project' class='projects'>
       <div class="container">
         <div class="row">
           <div class="projects__header">
@@ -137,27 +140,27 @@
         </div>
         <div class="row projects__top">
           <div class="projects__top col-md-12">
-             <div class="projects__top__img1">
-               <img src="./img/projects_img1.png" alt="" class="projects__img1">
+             <div id='banners' class="projects__top__img1">
+               <a href=""><img src="./img/projects_img1.png" alt="" class="projects__img1"></a>
              </div>
-             <div class="projects__top__img2">
-               <img src="./img/projects_img2.png" alt="" class="projects__img2">
+             <div id='banners' class="projects__top__img2">
+               <a href=""><img src="./img/projects_img2.png" alt="" class="projects__img2"></a>
              </div>
           </div>
         </div>
         <div class="row">
           <div class="projects__bottom col-md-12">
-            <div class="projects__bottom__img1">
-              <img src="./img/projects_img3.png" alt="" class="projects__img1">
+            <div id='banners' class="projects__bottom__img1">
+              <a href=""><img src="./img/projects_img3.png" alt="" class="projects__img1"></a>
             </div>
-            <div class="projects__bottom__img2">
-              <img src="./img/projects_img4.png" alt="" class="projects__img2">
+            <div id='banners' class="projects__bottom__img2">
+              <a href=""><img src="./img/projects_img4.png" alt="" class="projects__img2"></a>
             </div>
           </div>
         </div>
       </div>
     </article>
-    <article class="clients">
+    <article id='client' class="clients">
       <div class="container">
         <div class="row clients__header">
           <h1>Клиенты</h1>
@@ -165,16 +168,16 @@
         </div>
         <div class="row clients-content">
           <div class="clients-content__wrap">
-            <div class="clients-content__item"><img src="./img/clients_topox.png" alt=""></div>
-            <div class="clients-content__item"><img src="./img/clients_excepia.png" alt=""></div>
-            <div class="clients-content__item"><img src="./img/clients_vide.png" alt=""></div>
-            <div class="clients-content__item"><img src="./img/clients_dehotel.png" alt=""></div>
-            <div class="clients-content__item"><img src="./img/clients_umber.png" alt=""></div>
+            <div class="clients-content__item-topox"></div>
+            <div class="clients-content__item-excepia"></div>
+            <div class="clients-content__item-vide"></div>
+            <div class="clients-content__item-dehotel"></div>
+            <div class="clients-content__item-umber"></div>
           </div>
         </div>
       </div>
     </article>
-    <article class="contacts">
+    <article id='contact' class="contacts">
       <div class="container">
         <div class="row contacts__header">
           <h1>Контакты</h1>
@@ -229,16 +232,40 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
+              <button class='modal-header__btn' type="btn btn-danger" type="button" data-dismiss='modal'>&times</button>
             </div>
             <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ex illo debitis cum nesciunt quo, animi nam quibusdam velit eaque possimus! Quaerat atque, fuga iusto doloremque inventore labore hic in nobis ratione doloribus asperiores error expedita illo, eum perspiciatis nostrum, similique. A magnam ipsum optio eum. Nisi officiis perferendis itaque saepe, cumque voluptatum eius esse aliquam ratione error molestias reiciendis hic debitis explicabo aspernatur ex quos quis, deleniti porro, provident sint? Ipsa deleniti magni at officia iure similique ab deserunt tempore asperiores, minus odit dolor est quibusdam fugiat cumque quam vitae velit ad suscipit sed maxime vel ratione quisquam. Voluptatem! ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, excepturi nam? Facilis, dicta. Dolorum consequatur, quis ullam quibusdam molestiae, eveniet.</p>
-              <button type="btn btn-danger" type="button" data-dismiss='modal'>Error</button>
+              <div class="modal-body__item">
+                <a href="#main-page"><p>Главная</p></a>
+                <hr>
+              </div>
+              <div class="modal-body__item">
+                <a href="#service"><p>Услуги</p></a>
+                <hr>
+              </div>
+              <div class="modal-body__item">
+                <a href="#about"><p>О нас</p></a>
+                <hr>
+              </div>
+              <div class="modal-body__item">
+                <a href="#project"><p>Проекты</p></a>
+                <hr>
+              </div>
+              <div class="modal-body__item">
+                <a href="#client"><p>Клиенты</p></a>
+                <hr>
+              </div>
+              <div class="modal-body__item">
+                <a href="#contact"><p>Контакты</p></a>
+                <hr>
+              </div>
             </div>
           </div>
         </div>
       </div>
   <script src="./dist/jquery.min.js"></script>
   <script src="./dist/bootstrap.min.js"></script>
+  <script src="./src/js/main.js"></script>
 
 </body>
 

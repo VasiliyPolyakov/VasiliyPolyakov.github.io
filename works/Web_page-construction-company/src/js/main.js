@@ -1,5 +1,3 @@
 $(document).ready(function() {
-  $('.header-logo__menu').click(function() {
-    alert('Hello World');
-  })
+  $('#Modal').data('bs.modal').handleUpdate();
 });
