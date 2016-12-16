@@ -68,6 +68,7 @@ table {
       background-color: #edcd1f;
       height: 10px;
       width: 110px;
+			margin-top: 0px;
 }
 
 /*-----------------------------------------------header---------------------------------------------*/
@@ -128,6 +129,7 @@ table {
 	overflow: hidden;
 	top: 0;
 	left: 0;
+	padding-top: 100px;
 }
 
 #video-bg-elem {
@@ -248,9 +250,7 @@ table {
 .about-us-footer__wrap {
 	text-align: center;
 	margin-top: 0;
-	  .vline {
-			border-right: 1px solid white;
-	  }
+
    .about-us-footer__item {
 	   display: inline-block;
 		 width: 245px;
@@ -272,6 +272,7 @@ table {
 
 .projects__header {
 	margin-top: 70px;
+	margin-bottom: 50px;
 	h1 {
 		.headerStyleContent;
 	}
@@ -279,25 +280,33 @@ table {
 		.hrStyle;
 	}
 }
-
-.projects__img1 {
-	text-align: right;
-}
-
-.projects__img2 {
-	text-align: left;
-}
-.projects__img3:extend(.projects__img1){};
-.projects__img4:extend(.projects__img2){};
-
 .projects__top {
-	margin-bottom: 27px;
-	margin-top: 25px;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+.projects__top__img1 {
+	  margin-right: 10px;
+		display: inline-block;
+}
+.projects__top__img2 {
+	  margin-left: 10px;
+		display: inline-block;
 }
 
 .projects__bottom {
-	margin-bottom: 107px;
+	.projects__top;
+	margin-bottom: 85px;
+	 .projects__bottom__img1 {
+		 .projects__top__img1;
+	 }
+	 .projects__bottom__img2 {
+		 .projects__top__img2;
+	 }
 }
+
+
+
 
 /*--------clients--------*/
 
@@ -373,7 +382,6 @@ table {
 		height: 40px;
 		width: 20%;
 		color: #fff;
-		margin-left: 324px;
 	}
 }
 
@@ -420,8 +428,11 @@ table {
 	display: none;
 }
 
+.modal-body {
+	background-color: yellow;
+}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1105px) {
 
 	.header-logo__menu {
 		display: block;
@@ -440,8 +451,7 @@ table {
 	}
 	.header-footer__text {
 		  h1 {
-			  font-size: 20px;
-			  margin-top: 17px;
+				font-size: 40px;
 		  }
 		  img {
 			  margin-top: 0;
@@ -449,22 +459,44 @@ table {
    }
 
    .service-wrap__item {
-	   margin-bottom: 20px;
+	   margin: 20px 0 20px 0;
    }
 
-
-
 	 .projects__img1 {
-	 	margin-bottom: 10px;
+	 	margin-bottom: 20px;
 	 }
 
 	 .contacts-form__content {
 		 padding-left:0px;
 	 }
-	 .contacts-form__button {
-		 margin-left: 0px;
+
+
+	 .header-footer__video {
+		 overflow: hidden;
+
 	 }
+	 #video-bg-elem {
+		 width: 1000px;
+	 }
+
+	 .projects__top {
+		 overflow: hidden;
+	 }
+	 .projects__bottom:extend(.projects__top){};
+
+		.projects__top__img2 {
+			margin-left: 0px;
+		}
+
+
+
+
+
 }
+
+
+
+
 
 
 

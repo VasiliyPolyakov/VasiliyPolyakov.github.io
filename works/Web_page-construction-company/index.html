@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./src/js/main.js"></script>
   <link rel="stylesheet" href="./dist/all.css">
-  <link rel="stylesheet" href="dist/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/bootstrap.min.css">
   <title>Construction company</title>
 </head>
 
@@ -19,7 +17,7 @@
           <div class="header-logo__name">
             <p><a href="#"><b>Подъем</b><br>стройфирма</a></p>
           </div>
-          <div class="header-logo__menu"><a href=""><img src="./img/menu.png" alt=""></a></div>
+          <button class="header-logo__menu" type='button' data-toggle='modal' data-target='#modal'><a href=""><img src="./img/menu.png" alt=""></a></button>
         </div>
         <div class="header-nav col-xs-12 col-sm-12 col-md-9">
           <nav>
@@ -109,15 +107,15 @@
         </div>
         <div class="row about-us-footer">
           <div class="col-md-12 about-us-footer__wrap">
-            <div class="about-us-footer__item vline">
+            <div class="about-us-footer__item">
               <h1>2023</h1>
               <h3>Год <br> основания</h3>
             </div>
-            <div class="about-us-footer__item vline">
+            <div class="about-us-footer__item">
               <h1>206</h1>
               <h3>Завершенных<br> проектов</h3>
             </div>
-            <div class="about-us-footer__item vline">
+            <div class="about-us-footer__item">
               <h1>870</h1>
               <h3>Строительных<br> подрядов</h3>
             </div>
@@ -138,19 +136,23 @@
           </div>
         </div>
         <div class="row projects__top">
-          <div class="col-md-6 projects__img1">
-            <img src="./img/projects_img1.png" alt="" class="projects__img1">
-          </div>
-          <div class="col-md-6 projects__img2">
-            <img src="./img/projects_img2.png" alt="" class="projects__img2">
+          <div class="projects__top col-md-12">
+             <div class="projects__top__img1">
+               <img src="./img/projects_img1.png" alt="" class="projects__img1">
+             </div>
+             <div class="projects__top__img2">
+               <img src="./img/projects_img2.png" alt="" class="projects__img2">
+             </div>
           </div>
         </div>
-        <div class="row projects__bottom">
-          <div class="col-md-6 projects__img3">
-            <img src="./img/projects_img3.png" alt="" class="projects__img1">
-          </div>
-          <div class="col-md-6 projects__img4">
-            <img src="./img/projects_img4.png" alt="" class="projects__img2">
+        <div class="row">
+          <div class="projects__bottom col-md-12">
+            <div class="projects__bottom__img1">
+              <img src="./img/projects_img3.png" alt="" class="projects__img1">
+            </div>
+            <div class="projects__bottom__img2">
+              <img src="./img/projects_img4.png" alt="" class="projects__img2">
+            </div>
           </div>
         </div>
       </div>
@@ -212,7 +214,9 @@
   <footer>
     <div class="container">
       <div class="row footer">
-        <div class="col-md-6 footer-left-col"><p>© 2023 Строительная фирма «Подъём». Сайт создан на Wix.com</p></div>
+        <div class="col-md-6 footer-left-col">
+          <p>© 2023 Строительная фирма «Подъём». Сайт создан на Wix.com</p>
+        </div>
         <div class="col-md-6 footer-right-col">
           <img class='footer-right-col__img' src="./img/footer_vk.png" alt="">
           <img class='footer-right-col__img'src="./img/footer_fb.png" alt="">
@@ -220,8 +224,22 @@
         </div>
       </div>
     </div>
-
   </footer>
+      <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ex illo debitis cum nesciunt quo, animi nam quibusdam velit eaque possimus! Quaerat atque, fuga iusto doloremque inventore labore hic in nobis ratione doloribus asperiores error expedita illo, eum perspiciatis nostrum, similique. A magnam ipsum optio eum. Nisi officiis perferendis itaque saepe, cumque voluptatum eius esse aliquam ratione error molestias reiciendis hic debitis explicabo aspernatur ex quos quis, deleniti porro, provident sint? Ipsa deleniti magni at officia iure similique ab deserunt tempore asperiores, minus odit dolor est quibusdam fugiat cumque quam vitae velit ad suscipit sed maxime vel ratione quisquam. Voluptatem! ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, excepturi nam? Facilis, dicta. Dolorum consequatur, quis ullam quibusdam molestiae, eveniet.</p>
+              <button type="btn btn-danger" type="button" data-dismiss='modal'>Error</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="./dist/jquery.min.js"></script>
+  <script src="./dist/bootstrap.min.js"></script>
+
 </body>
 
 </html>
