@@ -487,6 +487,7 @@ table {
   border: 0px;
   height: 128px;
   height: 32px;
+  padding-left: 10px;
 }
 .contacts-form__wrap .contacts-form__message {
   width: 84%;
@@ -494,6 +495,7 @@ table {
   margin-top: 10px;
   border: 0px;
   height: 128px;
+  padding-left: 10px;
 }
 .contacts-form__wrap .contacts-form__button {
   background-color: #1e2d3b;
