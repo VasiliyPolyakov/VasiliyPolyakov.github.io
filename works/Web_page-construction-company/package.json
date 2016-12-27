@@ -16,6 +16,8 @@
     "gulp-less": "^3.3.0",
     "gulp-postcss": "^6.2.0",
     "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "pug": "^0.1.0",
