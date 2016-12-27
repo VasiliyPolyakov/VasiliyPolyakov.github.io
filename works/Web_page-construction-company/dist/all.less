@@ -71,10 +71,7 @@ table {
 			margin-top: 0px;
 }
 
-.clients-background-hover () {
- background-position: center;
- background-repeat: no-repeat;
-}
+
 
 /*-----------------------------------------------header---------------------------------------------*/
 
@@ -92,17 +89,24 @@ table {
 
     .header-logo__name {
     	margin-top: 20px;
-    	text-transform: uppercase;
-    	font-size: 23px;
-    	letter-spacing: 2px;
-    	margin-left: 20px;
-    	line-height: 1;
-    	color: #1e2d3b;
 
-    	background-image: url(../img/logo.png);
-    	background-repeat: no-repeat;
-    	background-position: center left;
-    	padding-left: 80px;
+			.sprite-logo {
+			    width: 47px;
+			    height: 49px;
+					margin-left: 30px;
+			    background-position: -476px -202px;
+			}
+
+			.header-logo__text {
+				display: inline-block;
+				text-transform: uppercase;
+	    	font-size: 23px;
+	    	letter-spacing: 2px;
+	    	margin-left: 20px;
+	    	line-height: 1;
+	    	color: #1e2d3b;
+			}
+
     }
 }
 
@@ -127,7 +131,6 @@ table {
 /*--------header-footer--------*/
 
 .header-footer__video {
-
 	z-index: -1000;
 	width: 100%;
 	height: 100%;
@@ -135,10 +138,10 @@ table {
 	top: 0;
 	left: 0;
 	padding-top: 100px;
+
 }
 
 #video-bg-elem {
-
 	top: 0;
 	left: 0;
 	min-width: 100%;
@@ -158,8 +161,10 @@ table {
 		.headerStyleHead;
 		margin-top: 85px;
 	}
-	img {
-	 margin-top: 30px;
+	.sprite-header_img {
+	    width: 54px;
+	    height: 31px;
+	    background-position: -596px -161px;
 	}
 }
 
@@ -241,35 +246,49 @@ table {
 
 
   .about-us__img {
+		padding: 300px 0;
 	  background-image: url(../img/about-as_img.png);
     height: 682px;
-    background-position: 102% 78%;
+		background-size: cover;
+		background-attachment: fixed;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		transition: all 0.2s ease;
   }
 
 
 .about-us-footer {
 	background-color: #edcd1f;
-	height: 100%;
+  height: 100%;
+	padding: 30px 0 30px 0;
+
 }
 
 .about-us-footer__wrap {
 	text-align: center;
 	margin-top: 0;
+	   display: flex;
+		 justify-content: center;
+		 flex-wrap: wrap;
+
+		 .border-rg {
+			  border-right: 2px solid white;
+		 }
 
    .about-us-footer__item {
-	   display: inline-block;
 		 width: 245px;
-		 margin-top: 40px;
+		 height: 150px;
+
 		 h1 {
 			 color: #fff;
 			 font-size: 60px;
 			 margin-bottom: 0;
+			 margin-top: 0;
 		 }
 		 h3 {
 			 color: #3d5975;
 			 font-size: 22px;
 			 margin-top: 0;
-			 margin-bottom: 57px;
 		 }
    }
 }
@@ -315,6 +334,13 @@ table {
 
 /*--------clients--------*/
 
+.clients-background-sprite () {
+ cursor: pointer;
+ width: 147px;
+ height: 147px;
+ margin: 0 28px 0 28px;
+}
+
 .clients {
 	background-color: #f7f5f5;
 }
@@ -332,61 +358,55 @@ table {
 
 .clients-content__wrap {
 	text-align: center;
-	.clients-content__item {
-		width: 230px;
-		display: inline-block;
-	}
+	display: flex;
+	justify-content: center;
+
 }
-.clients-content__item-topox {
-	width: 230px;
-	height: 147px;
-	display: inline-block;
-	background-image: url(../img/clients_topox.png);
-	.clients-background-hover;
+.sprite-clients_topox {
+  .clients-background-sprite;
+	background-position: -162px -162px;
 }
 
-.clients-content__item-topox:hover {
-    background: url(../img/clients_topox_color.png); /* Путь к файлу с заменяемым рисунком  */
-		.clients-background-hover;
-   }
-
-.clients-content__item-excepia {
-	.clients-content__item-topox;
-		background-image: url(../img/clients_excepia.png);
+.sprite-clients_topox:hover {
+    background-position: -319px -162px;
 }
 
-	 .clients-content__item-excepia:hover {
-		 background: url(../img/clients_excepia_color.png); /* Путь к файлу с заменяемым рисунком  */
-		.clients-background-hover;
-	 }
+.sprite-clients_excepia {
+	.clients-background-sprite;
+	background-position: -319px -5px;
 
-	 .clients-content__item-vide {
-		 .clients-content__item-topox;
-		 background-image: url(../img/clients_vide.png);
-	 }
+}
 
-	 .clients-content__item-vide:hover {
-		 background: url(../img/clients_vide_color.png); /* Путь к файлу с заменяемым рисунком  */
-		.clients-background-hover;
-	 }
+.sprite-clients_excepia:hover {
+		 background-position: -5px -162px;
+}
 
-	 .clients-content__item-dehotel {
-		 .clients-content__item-topox;
-		 background-image: url(../img/clients_dehotel.png);
-	 }
+.sprite-clients_vide {
+		.clients-background-sprite;
+		background-position: -319px -319px;
+}
 
-	 .clients-content__item-dehotel:hover {
-		 background: url(../img/clients_dehotel_color.png); /* Путь к файлу с заменяемым рисунком  */
-		.clients-background-hover;
-	 }
-	 .clients-content__item-umber {
-		 .clients-content__item-topox;
-		 background-image: url(../img/clients_umber.png);
-	 }
-	  .clients-content__item-umber:hover {
-		 background: url(../img/clients_umber_color.png); /* Путь к файлу с заменяемым рисунком  */
-		.clients-background-hover;
-	 }
+.sprite-clients_vide:hover {
+	background-position: -476px -5px;
+ }
+
+.sprite-clients_dehotel {
+	.clients-background-sprite;
+	background-position: -5px -5px;
+}
+
+.sprite-clients_dehotel:hover {
+		background-position: -162px -5px;
+}
+
+.sprite-clients_umber {
+    .clients-background-sprite;
+		background-position: -5px -319px;
+}
+
+.sprite-clients_umber:hover {
+   background-position: -162px -319px;
+}
 
 
 /*--------contacts--------*/
@@ -467,23 +487,54 @@ table {
 
 /*--------footer--------*/
 
+.footer-sprite-size() {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
 .footer {
 	padding: 0 100px 0 100px;
 	margin: 80px 0 20px 0;
 
-	.footer-right-col {
+  .footer-right-col {
 		text-align: right;
 	}
-	.footer-right-col__img {
-		margin-left: 10px;
-		padding-bottom: 20px;
-	}
+
 }
 
 .header-logo__menu {
 	display: none;
+	background-color:#edcd1f;
+	cursor: pointer;
+	.fa-bars {
+		background-color:#edcd1f;
+	}
 }
 
+
+.sprite-footer_fb {
+	.footer-sprite-size;
+  background-position: -476px -161px;
+}
+
+.sprite-footer_in {
+    .footer-sprite-size;
+    background-position: -516px -161px;
+}
+
+.sprite-footer_vk {
+    .footer-sprite-size;
+    background-position: -556px -161px;
+}
+
+/*--------sprite--------*/
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
 
 /*--------media queris--------*/
 
@@ -507,6 +558,13 @@ filter:alpha(opacity=40);
 			 display: inline-block;
 		 }
 	 }
+
+.about-us-footer__wrap {
+	.border-rg {
+		border-right: none;
+	}
+}
+
 
 
 	.header-logo__name {
@@ -560,7 +618,7 @@ filter:alpha(opacity=40);
 
 		.modal-header__button {
 			background-color: #edcd1f;
-			border: 0px;
+			border: none;
 			width: 60px;
 			height: 60px;
 		}
@@ -615,12 +673,4 @@ filter:alpha(opacity=40);
 
 .modal-window {
 	display: none;
-}
-
-
-
-
-@media screen and (max-width: 780px) {
-
-
 }

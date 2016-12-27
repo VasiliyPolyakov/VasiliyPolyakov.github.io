@@ -1,12 +1,15 @@
 (function() {
   var documentEl = $(document);
-  var parallaxBg = $('.header-footer');
+  var parallaxBg = $('div.about-us__img');
+  console.log(parallaxBg);
+  debugger;
 
-  document.on('scroll', function() {
+  documentEl.on('scroll', function() {
     var currScrollPos = documentEl.scrollTop();
-    $('.header-footer').css('background-position', '0 ' + -currScrollPos /
-      4 +
+    parallaxBg.css('background-position', '0 ' + -currScrollPos / 6 +
       'px');
+
   });
 
-});
+
+})();

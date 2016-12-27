@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./dist/all.css">
   <link rel="stylesheet" href="./dist/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/fonta-wesome/css/font-awesome.min.css">
+
   <title>Construction company</title>
 </head>
 
@@ -15,10 +17,11 @@
       <div class="row">
         <div class="header-logo col-xs-12 col-sm-12 col-md-4">
           <div class="header-logo__name">
-            <p><a href="#"><b>Подъем</b><br>стройфирма</a></p>
+            <i class="sprite sprite-logo"></i>
+            <p class="header-logo__text"><b>Подъем</b><br>стройфирма</p>
           </div>
           <div class="header-logo__menu-wrap">
-            <button class="header-logo__menu" type='button' data-toggle='.modal-window' data-target='.modal-window'><img src="./img/menu.png" alt=""></button>
+            <div class="header-logo__menu" type='button' data-toggle='.modal-window' data-target='.modal-window'><i class="fa fa-bars fa-3x" aria-hidden="true"></i></div>
           </div>
         </div>
 
@@ -37,12 +40,14 @@
     </div>
     <div class="header-footer">
       <div class="header-footer__video">
-          <video id='video-bg-elem' width='100%' preload="auto" autoplay="true" loop="loop" muted='muted'>
+        <video id='video-bg-elem' width='100%' preload="auto" autoplay="true" loop="loop" muted='muted'>
           <source src="video/header-video.mp4" type="video/mp4">
         </video>
         <div class="header-footer__text">
           <h1>Лидеры в области <br> качественного <br> строительства</h1>
-          <a href="#service"><img src="./img/header_img.png" alt=""></a>
+          <a href="#service">
+             <i class="sprite sprite-header_img"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -104,21 +109,21 @@
                 quod nemo ad, illum velit quis nam facilis consectetur autem porro deleniti eligendi. Error doloremque, exercitationem consequuntur voluptas nobis nesciunt quis. </p>
             </div>
           </div>
-          <div class="col-md-6 ">
+          <div class="col-md-6 about-us__img-wrap">
             <div class="about-us__img"></div>
           </div>
         </div>
         <div class="row about-us-footer">
           <div class="col-md-12 about-us-footer__wrap">
-            <div class="about-us-footer__item">
+            <div class="about-us-footer__item border-rg">
               <h1>2023</h1>
               <h3>Год <br> основания</h3>
             </div>
-            <div class="about-us-footer__item">
+            <div class="about-us-footer__item border-rg">
               <h1>206</h1>
               <h3>Завершенных<br> проектов</h3>
             </div>
-            <div class="about-us-footer__item">
+            <div class="about-us-footer__item border-rg">
               <h1>870</h1>
               <h3>Строительных<br> подрядов</h3>
             </div>
@@ -168,11 +173,11 @@
         </div>
         <div class="row clients-content">
           <div class="clients-content__wrap">
-            <div class="clients-content__item-topox"></div>
-            <div class="clients-content__item-excepia"></div>
-            <div class="clients-content__item-vide"></div>
-            <div class="clients-content__item-dehotel"></div>
-            <div class="clients-content__item-umber"></div>
+            <i class="sprite sprite-clients_topox"></i>
+            <i class="sprite sprite-clients_excepia"></i>
+            <i class="sprite sprite-clients_vide"></i>
+            <i class="sprite sprite-clients_dehotel"></i>
+            <i class="sprite sprite-clients_umber"></i>
           </div>
         </div>
       </div>
@@ -222,9 +227,9 @@
           <p>© 2023 Строительная фирма «Подъём». Сайт создан на Wix.com</p>
         </div>
         <div class="col-md-6 footer-right-col">
-          <img class='footer-right-col__img' src="./img/footer_vk.png" alt="">
-          <img class='footer-right-col__img'src="./img/footer_fb.png" alt="">
-          <img class='footer-right-col__img'src="./img/footer_in.png" alt="">
+          <i class="sprite sprite-footer_fb"></i>
+          <i class="sprite sprite-footer_in"></i>
+          <i class="sprite sprite-footer_vk"></i>
         </div>
       </div>
     </div>
@@ -233,7 +238,7 @@
   <div class="modal-window">
     <div class="modal-wrap">
       <div class="modal-head">
-        <button class='modal-header__button' type="button">&times</button>
+        <button class='modal-header__button' type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
       <div class="modal-content">
         <div class="modal-content__item">
@@ -265,10 +270,10 @@
 
   <script src="./dist/jquery.min.js"></script>
   <script src="./dist/bootstrap.min.js"></script>
-  <script src="./dist/parallax.min.js"></script>
   <script src="./src/js/main.js"></script>
   <script src="./src/js/smoothScroll.js"></script>
   <script src="./src/js/modalWindow.js"></script>
+
 
 </body>
 

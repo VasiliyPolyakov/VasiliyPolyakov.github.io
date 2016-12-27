@@ -140,16 +140,21 @@ table {
 }
 .header-logo .header-logo__name {
   margin-top: 20px;
+}
+.header-logo .header-logo__name .sprite-logo {
+  width: 47px;
+  height: 49px;
+  margin-left: 30px;
+  background-position: -476px -202px;
+}
+.header-logo .header-logo__name .header-logo__text {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 23px;
   letter-spacing: 2px;
   margin-left: 20px;
   line-height: 1;
   color: #1e2d3b;
-  background-image: url(../img/logo.png);
-  background-repeat: no-repeat;
-  background-position: center left;
-  padding-left: 80px;
 }
 .header-nav {
   background-color: #1e2d3b;
@@ -200,8 +205,10 @@ table {
   text-transform: uppercase;
   margin-top: 85px;
 }
-.header-footer__text img {
-  margin-top: 30px;
+.header-footer__text .sprite-header_img {
+  width: 54px;
+  height: 31px;
+  background-position: -596px -161px;
 }
 /*-----------------------------------------------content---------------------------------------------*/
 /*--------services--------*/
@@ -276,33 +283,44 @@ table {
   line-height: 2;
 }
 .about-us__img {
+  padding: 300px 0;
   background-image: url(../img/about-as_img.png);
   height: 682px;
-  background-position: 102% 78%;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .about-us-footer {
   background-color: #edcd1f;
   height: 100%;
+  padding: 30px 0 30px 0;
 }
 .about-us-footer__wrap {
   text-align: center;
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-us-footer__wrap .border-rg {
+  border-right: 2px solid white;
 }
 .about-us-footer__wrap .about-us-footer__item {
-  display: inline-block;
   width: 245px;
-  margin-top: 40px;
+  height: 150px;
 }
 .about-us-footer__wrap .about-us-footer__item h1 {
   color: #fff;
   font-size: 60px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .about-us-footer__wrap .about-us-footer__item h3 {
   color: #3d5975;
   font-size: 22px;
   margin-top: 0;
-  margin-bottom: 57px;
 }
 /*--------projects--------*/
 .projects__header {
@@ -369,84 +387,58 @@ table {
 }
 .clients-content__wrap {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
-.clients-content__wrap .clients-content__item {
-  width: 230px;
-  display: inline-block;
-}
-.clients-content__item-topox {
-  width: 230px;
+.sprite-clients_topox {
+  cursor: pointer;
+  width: 147px;
   height: 147px;
-  display: inline-block;
-  background-image: url(../img/clients_topox.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 0 28px 0 28px;
+  background-position: -162px -162px;
 }
-.clients-content__item-topox:hover {
-  background: url(../img/clients_topox_color.png);
-  /* Путь к файлу с заменяемым рисунком  */
-  background-position: center;
-  background-repeat: no-repeat;
+.sprite-clients_topox:hover {
+  background-position: -319px -162px;
 }
-.clients-content__item-excepia {
-  width: 230px;
+.sprite-clients_excepia {
+  cursor: pointer;
+  width: 147px;
   height: 147px;
-  display: inline-block;
-  background-image: url(../img/clients_topox.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/clients_excepia.png);
+  margin: 0 28px 0 28px;
+  background-position: -319px -5px;
 }
-.clients-content__item-excepia:hover {
-  background: url(../img/clients_excepia_color.png);
-  /* Путь к файлу с заменяемым рисунком  */
-  background-position: center;
-  background-repeat: no-repeat;
+.sprite-clients_excepia:hover {
+  background-position: -5px -162px;
 }
-.clients-content__item-vide {
-  width: 230px;
+.sprite-clients_vide {
+  cursor: pointer;
+  width: 147px;
   height: 147px;
-  display: inline-block;
-  background-image: url(../img/clients_topox.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/clients_vide.png);
+  margin: 0 28px 0 28px;
+  background-position: -319px -319px;
 }
-.clients-content__item-vide:hover {
-  background: url(../img/clients_vide_color.png);
-  /* Путь к файлу с заменяемым рисунком  */
-  background-position: center;
-  background-repeat: no-repeat;
+.sprite-clients_vide:hover {
+  background-position: -476px -5px;
 }
-.clients-content__item-dehotel {
-  width: 230px;
+.sprite-clients_dehotel {
+  cursor: pointer;
+  width: 147px;
   height: 147px;
-  display: inline-block;
-  background-image: url(../img/clients_topox.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/clients_dehotel.png);
+  margin: 0 28px 0 28px;
+  background-position: -5px -5px;
 }
-.clients-content__item-dehotel:hover {
-  background: url(../img/clients_dehotel_color.png);
-  /* Путь к файлу с заменяемым рисунком  */
-  background-position: center;
-  background-repeat: no-repeat;
+.sprite-clients_dehotel:hover {
+  background-position: -162px -5px;
 }
-.clients-content__item-umber {
-  width: 230px;
+.sprite-clients_umber {
+  cursor: pointer;
+  width: 147px;
   height: 147px;
-  display: inline-block;
-  background-image: url(../img/clients_topox.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/clients_umber.png);
+  margin: 0 28px 0 28px;
+  background-position: -5px -319px;
 }
-.clients-content__item-umber:hover {
-  background: url(../img/clients_umber_color.png);
-  /* Путь к файлу с заменяемым рисунком  */
-  background-position: center;
-  background-repeat: no-repeat;
+.sprite-clients_umber:hover {
+  background-position: -162px -319px;
 }
 /*--------contacts--------*/
 .contacts__header {
@@ -533,12 +525,37 @@ table {
 .footer .footer-right-col {
   text-align: right;
 }
-.footer .footer-right-col__img {
-  margin-left: 10px;
-  padding-bottom: 20px;
-}
 .header-logo__menu {
   display: none;
+  background-color: #edcd1f;
+  cursor: pointer;
+}
+.header-logo__menu .fa-bars {
+  background-color: #edcd1f;
+}
+.sprite-footer_fb {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: -476px -161px;
+}
+.sprite-footer_in {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: -516px -161px;
+}
+.sprite-footer_vk {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-position: -556px -161px;
+}
+/*--------sprite--------*/
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 /*--------media queris--------*/
 #banners {
@@ -559,6 +576,9 @@ table {
   }
   .header-logo__menu-wrap .header-logo__menu {
     display: inline-block;
+  }
+  .about-us-footer__wrap .border-rg {
+    border-right: none;
   }
   .header-logo__name {
     display: block;
@@ -598,7 +618,7 @@ table {
   /*--------modal window--------*/
   .modal-header__button {
     background-color: #edcd1f;
-    border: 0px;
+    border: none;
     width: 60px;
     height: 60px;
   }
