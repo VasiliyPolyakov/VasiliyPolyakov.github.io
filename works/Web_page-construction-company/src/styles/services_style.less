@@ -1,0 +1,60 @@
+
+@basicBackgroundColor: #FFFFFF;
+
+.headerStyleContent() {
+	color: #c6c6c6;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 55px;
+}
+
+.hrStyle () {
+	  border: none;
+      background-color: #edcd1f;
+      height: 10px;
+      width: 110px;
+			margin-top: 0px;
+}
+
+/*--------services--------*/
+
+.services {
+	background-color: @basicBackgroundColor;
+	.services-top {
+		margin-top: 68px;
+	   .services-top__name {
+		   text-align: center;
+		   font-size: 55px;
+		   .headerStyleContent;
+	   }
+	   hr {
+	    .hrStyle;
+	   }
+	}
+	.service-wrap {
+		margin-top: 50px;
+		margin-bottom: 88px;
+		display: inline-block;
+		text-align: center;
+		.service-wrap__item {
+			background-color: #f7f5f5;
+			display: inline-block;
+
+			.service-wrap__text {
+				text-align: left;
+				figcaption {
+				  color: #3d5975;
+				  font-size: 22px;
+				  margin: 36px 0 27px 28px;
+				}
+				p {
+					margin-left: 28px;
+					line-height: 2;
+				}
+			}
+		}
+		.service-wrap__item--active {
+			margin: 0 20px 0 20px;
+		}
+	}
+}
